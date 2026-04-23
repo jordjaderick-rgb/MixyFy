@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewHub | Music & Studio Bookings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo-square"></div>
+            <span class="brand-name">ViewHub</span>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search content...">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+            <button class="icon-btn"><i class="fas fa-bell"></i></button>
+            <button class="icon-btn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-col brand-col">
+                <h2>ViewHub</h2>
+                <p>Your platform for music content and studio bookings</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>GENERAL</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Directory</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>USER</h3>
+                <ul>
+                    <li><a href="#">Feed</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>INFO</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
