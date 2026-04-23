@@ -1,75 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViewHub | Music & Studio Bookings</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
-</head>
-<body>
+<div class="container">
+  <nav class="sidebar">
+    <div class="logo">VibeHub</div>
+    <ul class="nav-links">
+      <li class="active">Home</li>
+      <li>Explore</li>
+      <li>Library</li>
+    </ul>
+  </nav>
 
-    <header class="navbar">
-        <div class="nav-left">
-            <div class="logo-square"></div>
-            <span class="brand-name">ViewHub</span>
-        </div>
-
-        <div class="nav-center">
-            <div class="search-bar">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search content...">
-            </div>
-        </div>
-
-        <div class="nav-right">
-            <a href="#" class="btn-login">Login</a>
-            <a href="#" class="btn-signup">Sign Up</a>
-            <button class="icon-btn"><i class="fas fa-bell"></i></button>
-            <button class="icon-btn"><i class="fas fa-user-circle"></i></button>
-        </div>
+  <main class="main-content">
+    <header class="top-nav">
+      <input type="text" placeholder="Search..." class="search-bar">
+      <div class="auth-buttons">
+        <button class="btn-login">Login</button>
+        <button class="btn-signup">Sign Up</button>
+      </div>
     </header>
 
-    <main class="hero-section">
-        </main>
+    <section class="hero-banner">
+      <div class="hero-text">
+        <span class="tag">FEATURED</span>
+        <h1>Behind Every Hit <br> <span class="highlight">Is a Perfect Mix.</span></h1>
+        <button class="btn-primary">Watch Now</button>
+      </div>
+    </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            
-            <div class="footer-col brand-col">
-                <h2>ViewHub</h2>
-                <p>Your platform for music content and studio bookings</p>
-            </div>
-
-            <div class="footer-col">
-                <h3>GENERAL</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Directory</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>USER</h3>
-                <ul>
-                    <li><a href="#">Feed</a></li>
-                    <li><a href="#">Library</a></li>
-                    <li><a href="#">My Bookings</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>INFO</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-            </div>
-
-        </div>
+    <footer class="footer-grid">
+      <div class="footer-col">
+        <h4>General</h4>
+        <p>Home</p><p>Explore</p><p>Trending</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <p>Privacy</p><p>Terms</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <p>About Us</p><p>Contact</p>
+      </div>
     </footer>
-
-</body>
-</html>
+  </main>
+</div>
