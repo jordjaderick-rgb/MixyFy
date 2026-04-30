@@ -1,8 +1,69 @@
-<article>
-  <header>
-    <h1>MixyFy</h1>
-    <h1>Behind Every Hit <br> <span class="highlight">Is a Perfect Mix.</span></h1>
-    <p>Coming Soon...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Homepage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="home">
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#login">Login/Sign Up</a></li>
+    </ul>
+  </nav>
+  <header class="site-header">
+    <h1>Welcome to My Website</h1>
+    <p>A clean and simple homepage for your site.</p>
   </header>
-  <p>Thank you for Waiting!!!</p>
-</article>
+  <main>
+    <section class="intro" id="about">
+      <h2>About This Page</h2>
+      <p>This homepage is intentionally minimal, with a responsive layout and easy-to-read design.</p>
+    </section>
+    <section class="features" id="explore">
+      <div>
+        <h3>Fast</h3>
+        <p>Loads quickly and adapts to any screen size.</p>
+      </div>
+      <div>
+        <h3>Simple</h3>
+        <p>Easy to customize with your own content and colors.</p>
+      </div>
+      <div>
+        <h3>Modern</h3>
+        <p>Clean typography and layout for a professional look.</p>
+      </div>
+    </section>
+<section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for more information.</p>
+      <p>Email: info@example.com</p>
+    </section>
+    <section class="login-signup" id="login">
+      <h2>Login / Sign Up</h2>
+      <form class="auth-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-login">Login</button>
+          <button type="button" class="btn-signup">Sign Up</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 Simple Homepage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
