@@ -1,69 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body id="home">
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#explore">Explore</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#login">Login/Sign Up</a></li>
-    </ul>
-  </nav>
-  <header class="site-header">
-    <h1>Welcome to My Website</h1>
-    <p>A clean and simple homepage for your site.</p>
-  </header>
-  <main>
-    <section class="intro" id="about">
-      <h2>About This Page</h2>
-      <p>This homepage is intentionally minimal, with a responsive layout and easy-to-read design.</p>
-    </section>
-    <section class="features" id="explore">
-      <div>
-        <h3>Fast</h3>
-        <p>Loads quickly and adapts to any screen size.</p>
-      </div>
-      <div>
-        <h3>Simple</h3>
-        <p>Easy to customize with your own content and colors.</p>
-      </div>
-      <div>
-        <h3>Modern</h3>
-        <p>Clean typography and layout for a professional look.</p>
-      </div>
-    </section>
-<section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us for more information.</p>
-      <p>Email: info@example.com</p>
-    </section>
-    <section class="login-signup" id="login">
-      <h2>Login / Sign Up</h2>
-      <form class="auth-form">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn-login">Login</button>
-          <button type="button" class="btn-signup">Sign Up</button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <p>© 2026 Simple Homepage. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+:root {
+  --bg: #f5f8ff;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #3b82f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #22c55e, #ffffff);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.site-header {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  padding: 40px 32px;
+  margin: 24px auto;
+  text-align: center;
+  max-width: 760px;
+}
+
+.site-header h1 {
+  font-size: clamp(2.25rem, 3vw, 3rem);
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #22c55e, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-header p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom: 3px solid var(--accent);
+  z-index: 1000;
+  padding: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.top-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: var(--text);
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  padding: 0 16px 40px;
+}
+
+.intro,
+.features,
+.contact {
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.login-signup {
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  padding: 12px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: var(--accent);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-login,
+.btn-signup {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-login {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-login:hover {
+  background: #2563eb;
+}
+
+.btn-signup {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.btn-signup:hover {
+  background: #dcfce7;
+}
+
+.features {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.features div {
+  padding: 20px;
+  border-radius: 18px;
+  background: #f8fbff;
+}
+
+.features h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 24px 16px;
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  .intro,
+  .features {
+    padding: 24px;
+  }
+}
