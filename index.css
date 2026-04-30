@@ -84,10 +84,6 @@ body {
   color: var(--text);
 }
 
-body {
-  padding-top: 70px;
-}
-
 main {
   display: grid;
   gap: 24px;
@@ -210,4 +206,3 @@ main {
     padding: 24px;
   }
 }
-
