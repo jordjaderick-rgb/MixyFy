@@ -17,7 +17,14 @@
 }
 
 html, body {
-  overflow: hidden;
+  overflow: auto;
+}
+
+body#home {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100vh;
 }
 
 body {
@@ -33,10 +40,7 @@ body {
 }
 
 body#dashboard,
-body#account,
-body#genre,
-body#playlist,
-body#about {
+body#dashboard-only {
   background: radial-gradient(circle at top left, rgba(57, 212, 119, 0.18), transparent 22%),
     linear-gradient(180deg, #050806 0%, #070b08 45%, #020304 100%);
 }
@@ -564,3 +568,4 @@ main {
     min-width: 100px;
   }
 }
+
