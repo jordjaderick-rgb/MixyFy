@@ -1,70 +1,67 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MixyFy</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body id="home">
+</head>
+<body id="home">
     <nav class="top-nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#explore">Explore</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#login">Login/Sign Up</a></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#login">Login/Sign Up</a></li>
+        </ul>
     </nav>
+
     <header class="site-header">
-      <h1>Welcome to My Website</h1>
-      <p>A clean and simple homepage for your site.</p>
+        <h1>Welcome to MixyFy</h1>
+        <p>Be a part of a new era of music.</p>
     </header>
+
     <main>
-      <section class="intro" id="about">
-        <h2>About This Page</h2>
-        <p>This homepage is intentionally minimal, with a responsive layout and easy-to-read design.</p>
-      </section>
-      <section class="features" id="explore">
-        <div>
-          <h3>Fast</h3>
-          <p>Loads quickly and adapts to any screen size.</p>
-        </div>
-        <div>
-          <h3>Simple</h3>
-          <p>Easy to customize with your own content and colors.</p>
-        </div>
-        <div>
-          <h3>Modern</h3>
-          <p>Clean typography and layout for a professional look.</p>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for more information.</p>
-        <p>Email: info@example.com</p>
-      </section>
-      <section class="login-signup" id="login">
-        <h2>Login / Sign Up</h2>
-        <div class="auth-form">
-          <a href="dashboard.html" class="btn-login">Login</a>
-          <a href="dashboard.html" class="btn-signup">Sign Up</a>
-        </div>
-      </section>
+        <section class="features" id="about">
+            <div>
+                <h3>About Us</h3>
+                <p>Mixyfy is your ultimate music discovery platform, connecting you with talented artists and mix engineers from around the world. Explore personalized recommendations, build custom playlists, and immerse yourself in a vibrant community of music lovers.</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for more information.</p>
+            <p>Email: MixyFy@gmail.com</p>
+        </section>
+
+        <section class="login-signup" id="login">
+            <h2>Login / Sign Up</h2>
+            <p></p>
+            
+            <div class="auth-form">
+                <form action="dashboard.html" method="get">
+                    <div class="input-group form-group">
+                        <label for="login-identifier" class="sr-only">Login</label>
+                        <input id="login-identifier" type="text" placeholder="Enter username or email" name="identifier" autocomplete="username" required>
+                    </div>
+                    <div class="input-group form-group">
+                        <label for="login-password" class="sr-only">Password</label>
+                        <input id="login-password" type="password" placeholder="Enter password" name="password" autocomplete="current-password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-login">Login</button>
+                        <button type="button" class="btn-signup" disabled title="Demo only">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
     </main>
+
     <footer class="site-footer">
-      <p>© 2026 Simple Homepage. All rights reserved.</p>
+        <p>© 2026 MixyFy. All rights reserved.</p>
     </footer>
-    <script>
-      document.querySelector('.auth-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Simple redirect for demo purposes
-        window.location.href = 'landing.html';
-      });
-      document.querySelector('.btn-signup').addEventListener('click', function() {
-        // Simple redirect for demo purposes
-        window.location.href = 'landing.html';
-      });
-    </script>
-  </body>
-  </html>
+</body>
+</html>
