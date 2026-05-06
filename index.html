@@ -46,20 +46,10 @@
       </section>
       <section class="login-signup" id="login">
         <h2>Login / Sign Up</h2>
-        <form class="auth-form">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn-login">Login</button>
-            <button type="button" class="btn-signup">Sign Up</button>
-          </div>
-        </form>
+        <div class="auth-form">
+          <a href="dashboard.html" class="btn-login">Login</a>
+          <a href="dashboard.html" class="btn-signup">Sign Up</a>
+        </div>
       </section>
     </main>
     <footer class="site-footer">
@@ -68,12 +58,12 @@
     <script>
       document.querySelector('.auth-form').addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        window.location.href = 'dashboard.html';
+        // Simple redirect for demo purposes
+        window.location.href = 'landing.html';
       });
       document.querySelector('.btn-signup').addEventListener('click', function() {
-        
-        window.location.href = 'dashboard.html';
+        // Simple redirect for demo purposes
+        window.location.href = 'landing.html';
       });
     </script>
   </body>
