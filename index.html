@@ -1,72 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MixyFy</title>
- <link rel="stylesheet" href="./style.css" />
-</head>
-<body id="home">
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#explore">Explore</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#login">Login/Sign Up</a></li>
-    </ul>
-  </nav>
-  <header class="site-header">
-    <h1>MixyFy</h1>
-    <p>Where the art of the performance meets the science of the sound</p>
-  </header>
-  <main>
-    <section class="intro" id="about">
-      <h2>What is MixyFy?</h2>
-      <p>Moving the studio experts into the spotlight. Mixyfy is more than a streaming platform—it’s
-        a collaborative ecosystem. We empower artists to find their perfect sound and engineers to 
-        showcase their craft, creating a direct line between professional production and the listeners who love it
-      </p>
-    </section>
-    <section class="features" id="explore">
-      <div>
-        <h3>Fast</h3>
-        <p>Loads quickly and adapts to any screen size.</p>
-      </div>
-      <div>
-        <h3>Simple</h3>
-        <p>Easy to customize with your own content and colors.</p>
-      </div>
-      <div>
-        <h3>Modern</h3>
-        <p>Clean typography and layout for a professional look.</p>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us for more information.</p>
-      <p>MixyFy@gmail.com</p>
-    </section>
-    <section class="login-signup" id="login">
-      <h2>Login / Sign Up</h2>
-      <form class="auth-form">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Homepage</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="home">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#login">Login/Sign Up</a></li>
+      </ul>
+    </nav>
+    <header class="site-header">
+      <h1>Welcome to My Website</h1>
+      <p>A clean and simple homepage for your site.</p>
+    </header>
+    <main>
+      <section class="intro" id="about">
+        <h2>About This Page</h2>
+        <p>This homepage is intentionally minimal, with a responsive layout and easy-to-read design.</p>
+      </section>
+      <section class="features" id="explore">
+        <div>
+          <h3>Fast</h3>
+          <p>Loads quickly and adapts to any screen size.</p>
         </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <div>
+          <h3>Simple</h3>
+          <p>Easy to customize with your own content and colors.</p>
         </div>
-        <div class="form-actions">
-          <button type="submit" class="btn-login">Login</button>
-          <button type="button" class="btn-signup">Sign Up</button>
+        <div>
+          <h3>Modern</h3>
+          <p>Clean typography and layout for a professional look.</p>
         </div>
-      </form>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <p>© 2026 Simple Homepage. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information.</p>
+        <p>Email: info@example.com</p>
+      </section>
+      <section class="login-signup" id="login">
+        <h2>Login / Sign Up</h2>
+        <div class="auth-form">
+          <a href="landing.html" class="btn-login">Login</a>
+          <a href="landing.html" class="btn-signup">Sign Up</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>© 2026 Simple Homepage. All rights reserved.</p>
+    </footer>
+    <script>
+      document.querySelector('.auth-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Simple redirect for demo purposes
+        window.location.href = 'landing.html';
+      });
+      document.querySelector('.btn-signup').addEventListener('click', function() {
+        // Simple redirect for demo purposes
+        window.location.href = 'landing.html';
+      });
+    </script>
+  </body>
+  </html>
